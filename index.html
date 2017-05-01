@@ -9,6 +9,7 @@
 	<meta name="Radovan Sroka" content="SitePoint">
 
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/table.css">
 
 	<!--[if lt IE 9]>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -22,14 +23,16 @@
 		<header class="theme">
 			<div id="menu">
 				<ul>
+<!--					<li><a id="minilogo" onclick='clicked("news")' href="#"></a></li> -->
 					<li><a onclick='clicked("news")' href="#">Domov</a></li>
 
 					<div class="dropdown">
     				<button id="dropbtn" class="dropbtn">Atrakcie</button>
     				<div id="dropdown-content" class="dropdown-content">
+    					<a onclick='clicked("map")' href="#">Dino Mapa</a>
       				<a onclick='clicked("park")' href="#">Dino Park</a>
       				<a onclick='clicked("museum")' href="#">Dino Múzeum</a>
-      				<a onclick='clicked("pool")' href="#">Dino Bazén</a>
+      				<a onclick='clicked("pool")' href="#">Dino Vodný Park</a>
       				<a onclick='clicked("egg")' href="#">Dino Liaheň</a>
       				<a onclick='clicked("kindergarten")' href="#">Dino Škôlka</a>
     				</div>
@@ -55,81 +58,222 @@
 				<h2>Novinky</h2>
 				<h3 onclick='expand("new1")'>Novinka 1</h3>
 				<p id="new1">
-					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>
+					Minim dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 				<script type="text/javascript">loadExpanded("new1");</script>
 
 				<h3 onclick='expand("new2")'>Novinka 2</h3>
 				<p id="new2">
-					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+					Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.
 				</p>
 				<script type="text/javascript">loadExpanded("new2");</script>
 
 				<h3 onclick='expand("new3")'>Novinka 3</h3>
 				<p id="new3">
-					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+					Ex soleat habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no.</p>
+				<p>
+					Ut ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in irure in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 				<script type="text/javascript">loadExpanded("new3");</script>
 
 				<h3 onclick='expand("new4")'>Novinka 4</h3>
 				<p id="new4">
-					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
+					Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 				<script type="text/javascript">loadExpanded("new4");</script>
 
 				<h3 onclick='expand("new5")'>Novinka 5</h3>
 				<p id="new5">
-					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  Ipsum Lorem Ipsum Lorem Ipsum Lorem 
-					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  Ipsum Lorem Ipsum Lorem Ipsum Lorem 
+					Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 				<script type="text/javascript">loadExpanded("new5");</script>
 
 				<h3 onclick='expand("new6")'>Novinka 6</h3>
 				<p id="new6">
-					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+					Audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
 				<script type="text/javascript">loadExpanded("new6");</script>
 
 				<h3 onclick='expand("new7")'>Novinka 7</h3>
 				<p id="new7">
-					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+					Eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. Ut enim ad minim veniam, quis nostrud exercitation.
 				</p>
 				<script type="text/javascript">loadExpanded("new7");</script>
 			</section>
 
 			<section id="about">
 				<h2>O nás</h2>
+				<h3>Kto sme?</h3>
 				<p>
-					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  
+					Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>
+					Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in venus.
+				</p>
+				
+				<h3>Pôsobenie:</h3>
+				<p>
+					Estas soleat habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no. 
+				</p>
+				<h3>Čo by vás mohlo ešte zaujímať:</h3>
+				<p>
+					Audiam virtute ut, case utamur fuisset ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>
+					Agosto ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>
+					Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.
 				</p>
 			</section>
 
+			<section id="map">
+				<h2>Mapa</h2>
+				<p>
+					Vide Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.
+				</p>
+				<div>
+					<img src="images/map.jpg"></img>
+				</div>
+			</section>
+
 			<section id="price">
-				"price"
+				<h2>Cenník</h2>
+
+				<h3>Tabuľka akuálnej ceny vstupného:</h3>
+				<table class="tg">
+				  <tr>
+				    <th class="tg-yw4l"></th>
+				    <th class="tg-yw4l">Cena Czk</th>
+				    <th class="tg-yw4l">Cena Eur</th>
+				    <th class="tg-yw4l">Uplatnenie inej zľavy</th>
+				  </tr>
+				  <tr>
+				    <td class="tg-yw4l">Dieťa</td>
+				    <td class="tg-yw4l">200,-</td>
+				    <td class="tg-yw4l">7,-</td>
+				    <td class="tg-yw4l">NIe</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-yw4l">Študent</td>
+				    <td class="tg-yw4l">200,-</td>
+				    <td class="tg-yw4l">7,-</td>
+				    <td class="tg-yw4l">NIe</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-yw4l">Dospelý</td>
+				    <td class="tg-yw4l">400,-</td>
+				    <td class="tg-yw4l">14,-</td>
+				    <td class="tg-yw4l">Ano</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-yw4l">Dôchodca</td>
+				    <td class="tg-yw4l">250,-</td>
+				    <td class="tg-yw4l">9,-</td>
+				    <td class="tg-yw4l">Nie</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-yw4l">Skupina 5+</td>
+				    <td class="tg-yw4l">1000,-</td>
+				    <td class="tg-yw4l">33,-</td>
+				    <td class="tg-yw4l">Ano</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-yw4l">Skupina 10+</td>
+				    <td class="tg-yw4l">1500,-</td>
+				    <td class="tg-yw4l">50,-</td>
+				    <td class="tg-yw4l">Ano</td>
+				  </tr>
+				</table>
 			</section>
 
 			<section id="contact">
-				"contact"
+				<h2>Kontakt</h2>
+
+				<h3>Adresa</h3>
+				<p>Dino Park<br>
+				Hlavna 2905/2, 612 00 Bratislava<br>
+				IČ: 00216305, DIČ: SK00216305</p>
+
+				<h3>Kontakné osoby</h3>
+				<p>Dagmar	Boesová<br>
+				Riaditeľka<br>
+				Hlavna 2905/2, 612 00 Bratislava<br>
+				+421 000 000 000</p>
+
+				<p>Dana	Bubláková<br>
+				Zástupkyňa<br>
+				Hlavna 2905/2, 612 00 Bratislava<br>
+				+421 000 000 000</p>
+
+				<p>Emina Budurinová<br>
+				Zástupkyňa<br>
+				Hlavna 2905/2, 612 00 Bratislava<br>
+				+421 000 000 000</p>
+
+				<p>Mgr. Roman	Celý<br>
+				Zástupca<br>
+				Hlavna 2905/2, 612 00 Bratislava<br>
+				+421 000 000 000</p>
 			</section>
 
 			<section id="park">
-				"park"
+				<h2>Dino Park</h2>
+				<p>
+					Deserunt ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>
+					Virago vente dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>
+					Pri quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.
+				</p>
+				<div>
+					<img src="images/park.jpg"></img>
+				</div>
 			</section>
 
 			<section id="museum">
-				"museum"
+				<h2>Dino Múzeum</h2>
+				<p>
+					Esse habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no.
+				</p>
+				<p>
+					Cupidatat ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<div>
+					<img src="images/fossil.jpg"></img>
+				</div>
 			</section>
 
 			<section id="pool">
-				"pool"
+				<h2>Dino Vodný Park</h2>
+				<p>
+					Minim dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p>
+					Culpa minim dolor sit amet, consectetur reprehenderit elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<div>
+					<img src="images/water.jpg"></img>
+				</div>
 			</section>
 
 			<section id="egg">
-				"egg"
+				<h2>Dino Liaheň</h2>
+				<p>
+					Cirtute quas audiam virtute ut, case utamur fuisset eam ut, iisque accommodare an eam. Reque blandit qui eu, cu vix nonumy volumus. Legendos intellegam id usu, vide oporteat vix eu, id illud principes has. Nam tempor utamur gubergren no.
+				</p>
+				<div>
+					<img src="images/egg.jpg"></img>
+				</div>
 			</section>
 
 			<section id="kindergarten">
-				"kindergarten"
+				<h2>Dino Liaheň</h2>
+				<p>
+					Pariatur soleat habemus usu, te nec eligendi deserunt vituperata. Natum consulatu vel ea, duo cetero repudiare efficiendi cu. Has at quas nonumy facilisis, enim percipitur mei ad. Mazim possim adipisci sea ei, omnium aeterno platonem mei no.
+				</p>
+				<div>
+					<img src="images/egg.jpg"></img>
+				</div>
 			</section>
 		</div>
 	</div>
