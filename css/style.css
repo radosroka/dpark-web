@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.width {
+	max-width: 1200px;
+	margin: auto;
+}
+
+
+html {
+	background-color: #202020;
+	min-width: 750px;
+}
+
+body {
+	color: whitesmoke;
+	font-family: "Helvetica";
+}
+
+header {
+	background-color: black;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-width: 750px;
+}
+
+footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 60px;
+	width: 100%;
+	background-color: black;
+	display: inline-block;
+}
+ 
+footer div {
+	height: 100%;
+}
+
+
+footer div.left {
+	width: 50%;
+	float: left;
+	display: table;
+}
+
+footer div.right {
+	width: 50%;
+	float: left;
+	text-align: right;
+	display: table;
+}
+
+
+footer div span {
+	padding: 5%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.theme {
+	color: red;
+}
+
+header ul {
+	width: 100%;
+	text-align: center;
+}
+
+header ul li {
+	display: inline-block;
+	padding: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+header ul li:hover {
+	background-color: #202020;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 2em;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: red;
+
+    min-width: 200px;
+    min-height: 40px;
+
+	font-size: 2em;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.dropdown {
+	height: auto;
+	width: auto;
+	
+	padding: 5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 200px;
+    z-index: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+}
+
+.dropdown-content a {
+    color: red;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #202020
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover {
+    background-color: #202020;
+}
+
+#progress {
+    width: 100%;
+    background-color: #202020;
+}
+#bar {
+    width: 1%;
+    height: 2px;
+    background-color: red;
+}
+
+#page {
+	padding-top: 20%;
+	padding-bottom: 60px;
+}
+
+#logo {
+	width: 100%;
+	max-width: inherit;
+	min-width: inherit;
+	height: auto;
+	padding: 2%;
+	padding-bottom: 55px;
+}
+
+#logo img {
+	width: 80%;
+	min-width: inherit;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+section {
+	padding: 2%;
+	display: none;
+}
+
+#welcome {
+	display: block;
+}
+
+section h2 {
+	color: red;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+section h3 {
+	color: red;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	cursor: pointer;
+}
+
+section p {
+	padding: 3%;
+}
+
+#news p {
+	display: none;
+}
+
+p.show {
+	display: block;
+}
+
+
+

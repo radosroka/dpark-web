@@ -2,20 +2,148 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <title>DPark</title>
-  <meta name="description" content="The HTML5 DPark">
-  <meta name="Radovan Sroka" content="SitePoint">
+	<title>DPark</title>
+	<meta name="description" content="The HTML5 DPark">
+	<meta name="Radovan Sroka" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/style.css">
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+
+	<script src="js/script.js"></script>
 </head>
 
-<body>
-  <script src="js/script.js"></script>
+<body onload="move(50);setTimeout(hideImage, 3000);">
+	<div class="width">
+		<header class="theme">
+			<div id="menu">
+				<ul>
+					<li><a onclick='clicked("news")' href="#">Domov</a></li>
+
+					<div class="dropdown">
+    				<button id="dropbtn" class="dropbtn">Atrakcie</button>
+    				<div id="dropdown-content" class="dropdown-content">
+      				<a onclick='clicked("park")' href="#">Dino Park</a>
+      				<a onclick='clicked("museum")' href="#">Dino Múzeum</a>
+      				<a onclick='clicked("pool")' href="#">Dino Bazén</a>
+      				<a onclick='clicked("egg")' href="#">Dino Liaheň</a>
+      				<a onclick='clicked("kindergarten")' href="#">Dino Škôlka</a>
+    				</div>
+  				</div>
+
+					<li><a onclick='clicked("about")' href="#">O nás</a></li>
+					<li><a onclick='clicked("price")' href="#">Cenník</a></li>
+					<li><a onclick='clicked("contact")' href="#">Kontakt</a></li>
+				</ul>
+			</div>
+
+			<div id="progress">
+  			<div id="bar"></div>
+			</div>			
+		</header>
+
+		<div id="page">
+			<section id="welcome" >
+				<div id="logo"><img onshow="" src="images/logo.png"></div>
+			</section>
+
+			<section id="news">
+				<h2>Novinky</h2>
+				<h3 onclick='expand("new1")'>Novinka 1</h3>
+				<p id="new1">
+					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+				</p>
+				<script type="text/javascript">loadExpanded("new1");</script>
+
+				<h3 onclick='expand("new2")'>Novinka 2</h3>
+				<p id="new2">
+					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+				</p>
+				<script type="text/javascript">loadExpanded("new2");</script>
+
+				<h3 onclick='expand("new3")'>Novinka 3</h3>
+				<p id="new3">
+					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+				</p>
+				<script type="text/javascript">loadExpanded("new3");</script>
+
+				<h3 onclick='expand("new4")'>Novinka 4</h3>
+				<p id="new4">
+					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem 
+				</p>
+				<script type="text/javascript">loadExpanded("new4");</script>
+
+				<h3 onclick='expand("new5")'>Novinka 5</h3>
+				<p id="new5">
+					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  Ipsum Lorem Ipsum Lorem Ipsum Lorem 
+					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  Ipsum Lorem Ipsum Lorem Ipsum Lorem 
+				</p>
+				<script type="text/javascript">loadExpanded("new5");</script>
+
+				<h3 onclick='expand("new6")'>Novinka 6</h3>
+				<p id="new6">
+					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+				</p>
+				<script type="text/javascript">loadExpanded("new6");</script>
+
+				<h3 onclick='expand("new7")'>Novinka 7</h3>
+				<p id="new7">
+					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+				</p>
+				<script type="text/javascript">loadExpanded("new7");</script>
+			</section>
+
+			<section id="about">
+				<h2>O nás</h2>
+				<p>
+					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum  
+				</p>
+			</section>
+
+			<section id="price">
+				"price"
+			</section>
+
+			<section id="contact">
+				"contact"
+			</section>
+
+			<section id="park">
+				"park"
+			</section>
+
+			<section id="museum">
+				"museum"
+			</section>
+
+			<section id="pool">
+				"pool"
+			</section>
+
+			<section id="egg">
+				"egg"
+			</section>
+
+			<section id="kindergarten">
+				"kindergarten"
+			</section>
+		</div>
+	</div>
+
+	<footer class="theme">
+		<div class="width">
+			<div class="left">
+				<span>Radovan Sroka</span>
+			</div>
+
+			<div class="right">
+				<span>ITW 2017</span>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
