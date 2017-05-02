@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+a {
+	outline: none;
+}
+
 .width {
 	max-width: 1200px;
 	margin: auto;
@@ -45,13 +49,20 @@ footer div {
 
 
 footer div.left {
-	width: 50%;
+	width: 33%;
 	float: left;
 	display: table;
 }
 
+footer div.center {
+	width: 33%;
+	float: left;
+	text-align: center;
+	display: table;
+}
+
 footer div.right {
-	width: 50%;
+	width: 33%;
 	float: left;
 	text-align: right;
 	display: table;
@@ -63,6 +74,18 @@ footer div span {
 	display: table-cell;
 	vertical-align: middle;
 }
+
+footer div a {
+	padding: 5%;
+	display: table-cell;
+	vertical-align: middle;
+	color: red;
+	text-decoration: none;
+	outline: none;
+}
+
+
+
 
 .theme {
 	color: red;
